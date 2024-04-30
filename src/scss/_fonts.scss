@@ -1,7 +1,7 @@
 $fonts: (
-  "Regular": 400,
-  "Medium": 500,
-  "Bold": 700,
+  ("Regular": 400),
+  ("Medium": 500),
+  ("Bold": 700),
 );
 
 @each $font in $fonts {

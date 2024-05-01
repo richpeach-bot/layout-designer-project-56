@@ -1,0 +1,59 @@
+.hero {
+  color: $white;
+  text-align: center;
+
+  background-image: url('../images/banner.png');
+  background-position: center;
+  background-size: cover;
+
+  padding: 248px 0;
+  @media (min-width: 430px) {
+    padding: 200px 0;
+  }
+  &__subtitle {
+    margin-bottom: 16px;
+    @media (min-width: 576px) {
+      margin-bottom: 30px;
+    }
+  }
+  &__text {
+    margin-bottom: 17px;
+  }
+  &__form {
+    max-width: 570px;
+    margin: 0 auto;
+    &-fields {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      @media (min-width: 576px) {
+        flex-direction: row;
+      }
+    }
+    &-input {
+      font-size: 14px;
+      border: 2px solid $medium-gray;
+      border-radius: 3px;
+      background-color: transparent;
+      padding: 15px 20px;
+      width: 100%;
+
+      &::placeholder {
+        color: $white;
+      }
+      @media (min-width: 576px) {
+        max-width: 273px;
+      }
+    }
+    &-btn {
+      font-size: 13.5px;
+      color: $white;
+      border: none;
+      border-radius: 5px;
+      background-color: $green;
+      width: 100%;
+      max-width: 570px;
+      padding: 20px 30px;
+    }
+  }
+}

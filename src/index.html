@@ -3,9 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/app.css">
   <title>Music Box · grusha</title>
 </head>
 <body>
 
+  <header class="header">
+    <div class="container">
+      <nav class="menu">
+        <div class="menu__link-wrapper">
+          <a class="menu__logo link fw-bold text-uppercase" href="/src/index.html">
+            <img class="menu__logo-img" src="images/logo.svg" alt="Логотип">
+            <span>Music Box</span>
+          </a>
+
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link link text-uppercase" href="#">Главная</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link link text-uppercase" href="#">Каталог</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link link text-uppercase" href="#">Исполнители</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link link text-uppercase" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu__search">
+          <form class="menu__search-form" action="#">
+            <input class="menu__search-input text-uppercase" type="text" placeholder="Поиск...">
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="page-description">
+      <div class="container">
+        <h1 class="hero__title h1">Онлайн музыка где угодно</h1>
+        <h2 class="hero__subtitle h2">без ограничений</h2>
+        <p class="hero__text">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+        <form class="hero__form" action="#">
+          <div class="hero__form-fields mb-2">
+            <input class="hero__form-input fw-bold" type="text" placeholder="Имя">
+            <input class="hero__form-input fw-bold" type="text" placeholder="Email">
+          </div>
+          <button class="hero__form-btn text-uppercase" type="submit">Получить доступ</button>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
